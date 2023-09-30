@@ -234,7 +234,7 @@
         </div>
       </section>
     </main>
-     <footer class="footer">
+      <footer class="footer">
       <div class="container">
         <div class="call-to-action-container">
           <a class="logo link" href="./index.html">
@@ -278,20 +278,20 @@
             </li>
           </ul>
         </div>
-        <form name="feedback-form" autocomplete="off" novalidate>
+        <div class="subscribe-form">
           <p class="label-text">Subscribe</p>
-          <div class="subscription">
+          <form name="feedback-form" autocomplete="off" novalidate>
             <label class="form-label">
-              <input type="email" class="form-input" name="email" placeholder="E-mail" />
+              <input class="form-input" type="email"  name="email" placeholder="E-mail" />
             </label>
-            <button type="subscribe">
+            <button class="subscribe-btn" type="submit">
               Subscribe
               <svg class="send-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send-icon"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

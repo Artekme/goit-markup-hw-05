@@ -407,74 +407,88 @@
             </li>
           </ul>
         </div>
-        <form name="feedback-form" autocomplete="off" novalidate>
+        <div class="subscribe-form">
           <p class="label-text">Subscribe</p>
-          <div class="subscription">
+          <form name="feedback-form" autocomplete="off" novalidate>
             <label class="form-label">
-              <input type="email" class="form-input" name="email" placeholder="E-mail" />
+              <input class="form-input" type="email" name="email" placeholder="E-mail" />
             </label>
-            <button type="subscribe">
+            <button class="subscribe-btn" type="submit">
               Subscribe
               <svg class="send-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send-icon"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <p class="title-modal">Leave your contacts and we will call you back</p>
         <button class="modal-close-button" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
 
-        <div class="inputs-modal">
-          <p class="title-modal">Leave your contacts and we will call you back</p>
-          <form class="modal-form">
-            <label>
-              Name
-              <input class="input-place" type="text" name="username" />
-              
-            </label>
-            <label>
-              Phone
+        <form class="modal-form">
+          <div class="inputs-modal">
+            <label class="input-label" for="user-name"> Name </label>
+            <div class="input-wrap">
+              <input class="input-place" id="user-name" type="text" name="user-name" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-man-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="inputs-modal">
+            <label class="input-label"> Phone</label>
+            <div class="input-wrap">
               <input class="input-place" type="tel" name="phone" />
-              
-            </label>
-            <label>
-              Email
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-icon"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="inputs-modal">
+            <label class="input-label"> Email</label>
+            <div class="input-wrap">
               <input class="input-place" type="email" name="email" />
-              
-            </label>
-            <label>
-              Comment
-              <textarea
-                class="input-place comment-area"
-                name="feedback"
-                rows=""
-                placeholder="Text input"
-              ></textarea>
-            </label>
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-mail-icon"></use>
+              </svg>
+            </div>
+          </div>
 
-            <input
-              class="privacy-policy"
-              type="checkbox"
-              name="privacy-policy"
-              value="privacy-policy"
-              id="privacy-policy"
-            />
-            <label for="privacy-policy">
-              I accept the terms and conditions of the
-              <a class="privacy-link" href="">Privacy Policy</a>
-            </label>
+          <div class="comment-input-label">
+            <label class="input-label" for="user-comment"> Comment</label>
+            <textarea
+             id="user-comment"
+              class="input-place comment-area"
+              name="user-comment"
+              rows=""
+              placeholder="Text input"
+            ></textarea>
+          </div>
 
-            <button class="submit" type="submit">Send</button>
-          </form>
-        </div>
+          <input
+            class="privacy-policy"
+            type="checkbox"
+            name="privacy-policy"
+            value="privacy-policy"
+            id="privacy-policy"
+          />
+          <label for="privacy-policy">
+            I accept the terms and conditions of the
+            <a class="privacy-link" href="">Privacy Policy</a>
+          </label>
+
+          <button class="submit" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
